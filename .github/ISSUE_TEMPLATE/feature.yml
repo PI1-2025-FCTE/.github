@@ -4,8 +4,9 @@ title: "[FEATURE]: "
 labels: ["feature", "precisa-triagem"]
 body:
   - type: textarea
-    id: Detalhes sobre a funcionalidade
+    id: detalhes-funcionalidade
     attributes:
+      label: "Detalhes sobre a funcionalidade"
       placeholder: |
         Ex: Criação da tela de inserção de instruções
     validations:

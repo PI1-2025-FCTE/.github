@@ -3,11 +3,13 @@ description: "funcionalidade para o projeto."
 title: "[FEATURE]: "
 labels: ["feature", "precisa-triagem"]
 body:
-  - type: markdown
+  - type: textarea
+    id: Detalhes sobre a funcionalidade
     attributes:
-      value: |
-        Descreva a funcionalidade proposta em detalhes.
-
+      placeholder: |
+        Ex: Criação da tela de inserção de instruções
+    validations:
+      required: true
   - type: textarea
     id: o-que-deve-ser-feito
     attributes:

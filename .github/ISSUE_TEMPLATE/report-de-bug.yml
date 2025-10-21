@@ -1,0 +1,62 @@
+name: "Relatório de Bug"
+description: "Crie um relatório para nos ajudar a melhorar"
+title: "[BUG]: "
+labels: ["bug", "precisa-triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por dedicar seu tempo para preencher este relatório de bug!
+        Por favor, forneça o máximo de detalhes possível.
+
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: "O que aconteceu?"
+      description: "Uma descrição clara e concisa do que é o bug."
+      placeholder: "Ex: Ao clicar no botão 'Salvar', recebo um erro 500..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos-para-reproduzir
+    attributes:
+      label: "Passos para Reproduzir"
+      description: "Como podemos reproduzir o comportamento?"
+      value: |
+        1. Vá para '...'
+        2. Clique em '....'
+        3. Veja o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamento-esperado
+    attributes:
+      label: "Comportamento Esperado"
+      description: "O que você esperava que acontecesse?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: "Prioridade"
+      description: "Qual a gravidade deste bug?"
+      options:
+        - "Baixa"
+        - "Média"
+        - "Alta"
+        - "Crítica"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: termos
+    attributes:
+      label: "Checklist de Verificação"
+      options:
+        - label: "Eu procurei por issues similares e não encontrei nenhuma aberta."
+          required: true
+        - label: "Eu estou usando a versão mais recente do software."
+          required: true
